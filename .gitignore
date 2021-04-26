@@ -131,3 +131,5 @@ $RECYCLE.BIN/
 .DS_Store
 .vscode
 _NCrunch*
+.fake
+.ionide

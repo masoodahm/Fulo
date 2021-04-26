@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using Fulo.Lang.Core;
 
 namespace Fulo.Lang
 {
@@ -41,7 +42,8 @@ namespace Fulo.Lang
 
         private static void run(string source, string fileName)
         {
-            
+            Lexer lexer = new Lexer(source, fileName);
+            List<Token> tokens = lexer.ScanTokens();
         }
 
         public static void printAndStoreError(string errorMsg) {
